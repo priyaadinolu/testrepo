@@ -2,6 +2,6 @@
 # tasks
 - include_tasks: mynewfile.yml
 - include_tasks: myfilehandl.yml
-- include_tasks: changwtemplate.yml
+- include_tasks: changetemplate.yml
 - include_tasks: handlers
 
