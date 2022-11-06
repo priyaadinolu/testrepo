@@ -5,9 +5,8 @@
          dest: /var/www/html/index.html
   notify: restarted
   
-  handlers:
-      - name: restart
-        service:
-           name: apache2
-           state: restarted
+ # handlers:
+  #    - name: restart
+   #     service:
+    #      state: restarted
 
