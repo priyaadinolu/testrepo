@@ -3,11 +3,11 @@
   template:
          src: template/vertex.j2
          dest: /var/www/html/index.html
-  notify: restartwebserver
+  notify: restarted
   
   handlers:
-      - name: restartwebserver
+      - name: restart
         service:
-          name: apache2
-          state: restarted
+           name: apache2
+           state: restarted
 
