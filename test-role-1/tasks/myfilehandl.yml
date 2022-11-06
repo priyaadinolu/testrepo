@@ -1,11 +1,17 @@
 ---
-- name: i want to change template
-  template:
+ - name: i want to install webserver
+   apt:
+      name: apache2
+      state: present
+   notify: restartwebserver
+
+ - name: i want to change template
+   template:
          src: template/vertex.j2
          dest: /var/www/html/index.html
-  notify: restartwebserver
+   notify: restartwebserver
  
-  handlers:
+   handlers:
       - name: restartwebserver
         service:
            name: apache2
