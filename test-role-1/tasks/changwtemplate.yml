@@ -1,0 +1,6 @@
+---
+- name: i want to change template
+  template:
+         src: template/vertex.j2
+         dest: /var/www/html/index.html
+  notify: restartwebserver
