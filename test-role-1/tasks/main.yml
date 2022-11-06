@@ -1,4 +1,4 @@
 ---
 # tasks
-- include_task: mynewfile.yml
-- include_task: myfilehandl.yml
+- include_tasks: mynewfile.yml
+- include_tasks: myfilehandl.yml
