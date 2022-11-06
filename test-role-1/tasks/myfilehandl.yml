@@ -1,9 +1,9 @@
 ---
- - name: i want to install webserver
-   apt:
+- name: i want to install webserver
+  apt:
       name: apache2
       state: present
-   notify: restartwebserver
+  notify: restartwebserver
 
  #- name: i want to change template
   # template:
@@ -11,7 +11,7 @@
     #     dest: /var/www/html/index.html
    #notify: restartwebserver
  
-   handlers:
+  handlers:
       - name: restartwebserver
         service:
            name: apache2
