@@ -4,10 +4,11 @@
       name: apache2
       state: present
   notify: restartwebserver
+
 - name: i want to change template
   template:
          src: vertex.j2
-         dest: /var/www, public_html
+         dest: /var/www/html/index.html
   notify: restartwebserver
  
   handlers:

@@ -1,4 +1,4 @@
 ---
-# tasks file for test-role-1
+
 - include_task: mynewfile.yml
 - include_task: myfilehandl.yml
