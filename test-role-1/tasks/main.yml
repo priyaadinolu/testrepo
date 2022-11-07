@@ -1,6 +1,5 @@
 ---
 # tasks
-- include_tasks: mynewfile.yml
 - include_tasks: myfilehandl.yml
 - include_tasks: changetemplate.yml
 
